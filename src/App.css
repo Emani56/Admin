@@ -1,0 +1,60 @@
+/* App.css */
+:root {
+  --bg-color: #ffffff; /* Light mode background */
+  --text-color: #4a5568; /* Light mode text */
+  --header-bg-color: #f8f9fa; /* Light mode header background */
+  --btn-bg-color: #e2e8f0; /* Light mode button background */
+  --btn-text-color: #4a5568; /* Light mode button text */
+  --input-bg-color: #ffffff; /* Light mode input background */
+  --input-text-color: #4a5568; /* Light mode input text */
+  --placeholder-color: #a0aec0; /* Light mode placeholder text color */
+}
+
+[data-theme="dark"] {
+  --bg-color: #2d3748; /* Dark mode background */
+  --text-color: #e2e8f0; /* Dark mode text */
+  --header-bg-color: #1a202c; /* Dark mode header background */
+  --btn-bg-color: #4a5568; /* Dark mode button background */
+  --btn-text-color: #e2e8f0; /* Dark mode button text */
+  --input-bg-color: #ffffff;  /* Dark mode input background */
+  --input-text-color: #4a5568; /* Dark mode input text */
+  --placeholder-color: #f0f1f3; /* Dark mode placeholder text color */
+}
+
+/* Placeholder text color */
+input::placeholder {
+  color: var(--placeholder-color);
+  opacity: 1; /* Ensure full opacity */
+}
+
+input:-ms-input-placeholder {
+  color: var(--placeholder-color); /* For Internet Explorer */
+}
+
+input::-ms-input-placeholder {
+  color: var(--placeholder-color); /* For Microsoft Edge */
+}
+.paper-container {
+  padding: 16px;
+  height: 100%;
+  background-color: var(--paper-bg-color);
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.search-input {
+  border-radius: 8px;
+  width: 100%;
+  background-color: var(--input-bg-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:hover {
+  border-color: #4a5568;
+}
+
+.search-input .MuiOutlinedInput-input {
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  color: var(--input-text-color);
+}
